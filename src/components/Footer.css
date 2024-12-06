@@ -1,0 +1,75 @@
+/* Footer Styles */
+.footer {
+    background-color: #fff; /* Dark Blue Background */
+    color: #fff; /* White text */
+    padding: 4rem 2rem; /* Padding for spacing */
+    width: 100%;
+    position: relative; /* So it doesn't overlap the content */
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000; /* Ensure footer stays above content */
+    text-align: center;
+  }
+  
+  /* Footer links section */
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Evenly spaced grid */
+    margin-bottom: 3rem;
+  }
+  
+  .footer-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Styling for each link */
+  .footer-link {
+    display: block;
+    color: #023b67; /* Light Blue color for links */
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .footer-link:hover {
+    color: #ff9800; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Footer bottom section */
+  .footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid white; /* Light border for separation */
+    padding-top: 1rem;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+    color: #4F46E5; /* Light gray text color */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-title {
+      text-align: center;
+    }
+  
+    .footer-link {
+      text-align: center;
+    }
+  }
+  

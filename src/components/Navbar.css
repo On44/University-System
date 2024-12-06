@@ -1,0 +1,132 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* School-theme dark blue */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Navbar Logo */
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+  }
+  
+  .navbar .logo img {
+    max-height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Navigation Links */
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #00aced; /* Highlight color */
+  }
+  
+  /* Dropdown Menu (optional) */
+  .navbar ul li.dropdown {
+    position: relative;
+  }
+  
+  .navbar ul li.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #003366;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .dropdown-menu a {
+    color: #003366;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar Buttons */
+  .navbar .buttons {
+    display: flex;
+  }
+  
+  .navbar .buttons .btn {
+    background-color: #00aced;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .buttons .btn:hover {
+    background-color: #007bb5;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    .navbar .buttons {
+      flex-direction: column;
+      width: 100%;
+      align-items: stretch;
+    }
+  
+    .navbar .buttons .btn {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
